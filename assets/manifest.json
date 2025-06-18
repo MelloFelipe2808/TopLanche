@@ -1,0 +1,21 @@
+{
+  "name": "Top Lanche",
+  "short_name": "TopLanche",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#0dff00",
+  "description": "O melhor app de lanches da sua região!",
+  "icons": [
+    {
+      "src": "toplogo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "toplogo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
