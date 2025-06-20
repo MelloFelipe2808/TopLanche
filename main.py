@@ -23,5 +23,4 @@ def main(page:ft.Page):
 
 ft.app(target=main,
        view=ft.WEB_BROWSER,
-       assets_dir='assets',
-       port=5000,)
+       assets_dir='assets')
