@@ -8,12 +8,12 @@
   "description": "O melhor app de lanches da sua região!",
   "icons": [
     {
-      "src": "toplogo.png",
-      "sizes": "512x512",
+      "src": "assets/toplogo.png",
+      "sizes": "1000x1000",
       "type": "image/png"
     },
     {
-      "src": "toplogo.png",
+      "src": "assets/toplogo.png",
       "sizes": "1000x1000",
       "type": "image/png"
     }
