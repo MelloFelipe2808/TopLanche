@@ -4,16 +4,16 @@
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",
-  "theme_color": "#000000",
+  "theme_color": "#0dff00",
   "description": "O melhor app de lanches da sua região!",
   "icons": [
     {
-      "src": "/web/icons/icon-192.png",
-      "sizes": "192x192",
+      "src": "favicon.png",
+      "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "/web/icons/icon-512.png",
+      "src": "favicon.png",
       "sizes": "512x512",
       "type": "image/png"
     }
