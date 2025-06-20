@@ -4,7 +4,7 @@
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",
-  "theme_color": "#0dff00",
+  "theme_color": "#00000",
   "description": "O melhor app de lanches da sua região!",
   "icons": [
     {
