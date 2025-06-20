@@ -13,7 +13,8 @@ def main(page:ft.Page):
     Xapp(page=page,
          routes=[
              route(route="/", view=HomeView),
-             route(route="/new", view=NewView)
+             route(route="/new", view=NewView),
+             route(route="/cart", view=CartView),
          ]
          )
 
