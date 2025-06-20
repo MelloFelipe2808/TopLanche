@@ -9,12 +9,12 @@
   "icons": [
     {
       "src": "toplogo.png",
-      "sizes": "192x192",
+      "sizes": "512x512",
       "type": "image/png"
     },
     {
       "src": "toplogo.png",
-      "sizes": "512x512",
+      "sizes": "1000x1000",
       "type": "image/png"
     }
   ]

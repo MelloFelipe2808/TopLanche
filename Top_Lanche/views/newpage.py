@@ -64,20 +64,21 @@ def mostrar_categoria(categoria):
 categorias = ["Hamburgueres", "Trios", "Combos", "Bebidas"]
 
 # Barra de botões de categorias
+def criar_botao_categoria(cat):
+    return ft.ElevatedButton(
+        content=ft.Text(value=cat, size=16, weight="bold", color="green"),
+        on_click=lambda e: mostrar_categoria(cat)
+    )
+
 botoes_categorias = ft.Row(
     spacing=10,
     scroll=ft.ScrollMode.AUTO,
-    controls=[
-        ft.ElevatedButton(content=ft.Text(value=c,size=16, weight="bold", color="green"),
-                          on_click=lambda e, cat=c: mostrar_categoria(cat)
-        )
-        for c in categorias
-    ]
+    controls=[criar_botao_categoria(c) for c in categorias]
 )
+
 
 # View principal
 class NewView(Xview):
-    #mostrar_categoria("Hamburgueres")
     def build(self):
         return ft.View(
             vertical_alignment='top',
@@ -98,7 +99,8 @@ class NewView(Xview):
                         ft.IconButton(
                             ft.Icons.SHOPPING_CART_CHECKOUT_OUTLINED,
                             icon_color='#0dff00',
-                            icon_size=35
+                            icon_size=35,
+                            on_click=lambda e: self.go("/cart")
                         ),
                     ]
                 ),
@@ -110,5 +112,5 @@ class NewView(Xview):
         )
 
     def did_mount(self):
-        # Só é seguro chamar update agora
+    # Agora a lista já está na página, então podemos atualizar sem erro
         mostrar_categoria("Hamburgueres")
